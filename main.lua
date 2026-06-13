@@ -14,7 +14,7 @@ function love.load()
     local img = love.graphics.newImage("lui/assets/images/button_normal_01.png")
 
     local par = Panel:new({ax = 0.5, ay = 0.5, w = 400, h = 400})
-    local cont = VScrollBar:new({ax = 1, ay = 1})
+    local cont = Button:new({text = "Button Here", ax = 1, ay = 1})
     Lui:add_child(par)
     par:add_child(cont)
 end
